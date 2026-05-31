@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Sidebar, { TopBar } from '@/components/Sidebar'
 import YuanfangAssistant from '@/components/YuanfangAssistant'
 import Dashboard from '@/pages/Dashboard'
