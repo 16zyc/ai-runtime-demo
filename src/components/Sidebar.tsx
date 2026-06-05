@@ -1,7 +1,17 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import {
   LayoutDashboard,
-  Rocket,
+  UserPlus,
+  ClipboardCheck,
+  FileSignature,
+  Archive,
+  Cpu,
+  GraduationCap,
+  BookOpen,
+  MessageSquare,
+  ClipboardList,
+  Zap,
+  BarChart3,
   Star,
   Globe,
   ShieldCheck,
@@ -27,10 +37,21 @@ const allNavGroups = [
     ],
   },
   {
-    label: 'OPC 创业者端',
+    label: 'OPC管理',
     items: [
-      { path: '/workspace', label: '创业工作台', icon: Rocket },
-      { path: '/empowerment', label: '赋能体系总览', icon: Globe },
+      { path: '/opc-management', label: 'OPC管理系统', icon: UserPlus },
+    ],
+  },
+  {
+    label: '赋能开发',
+    items: [
+      { path: '/empowerment-platform', label: '赋能开发平台', icon: Cpu },
+    ],
+  },
+  {
+    label: '订单管理',
+    items: [
+      { path: '/order-management', label: '订单管理系统', icon: ClipboardList },
     ],
   },
   {
@@ -63,14 +84,18 @@ const allNavGroups = [
 
 const breadcrumbMap: Record<string, string> = {
   '/': '平台总览',
-  '/workspace': 'OPC 创业工作台',
-  '/empowerment': '创业赋能体系',
+  '/opc-management': 'OPC管理系统',
+  '/empowerment-platform': '赋能开发平台',
+  '/order-management': '订单管理系统',
   '/credit': 'OPC 信用分详情',
   '/panorama': '产业全景视图',
   '/social-insurance': '社保扩面分析',
   '/tax-warning': '税收监管预警',
   '/talent': '人才结构洞察',
   '/risk-service': '风险预警处置',
+  '/risk-disposal': '风险处置闭环',
+  '/workspace': 'OPC 创业工作台',
+  '/empowerment': '创业赋能体系',
   '/system/data': '数据源管理',
   '/system/roles': '角色权限',
   '/system/api': 'API 接入',

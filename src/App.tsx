@@ -2,8 +2,9 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Sidebar, { TopBar } from '@/components/Sidebar'
 import YuanfangAssistant from '@/components/YuanfangAssistant'
 import Dashboard from '@/pages/Dashboard'
-import Workspace from '@/pages/Workspace'
-import Empowerment from '@/pages/Empowerment'
+import OpcManagement from '@/pages/OpcManagement'
+import EmpowermentPlatform from '@/pages/EmpowermentPlatform'
+import OrderManagement from '@/pages/OrderManagement'
 import Credit from '@/pages/Credit'
 import Panorama from '@/pages/Panorama'
 import SocialInsurance from '@/pages/SocialInsurance'
@@ -23,8 +24,9 @@ export default function App() {
         <main className="ml-[220px] pt-16 p-6 min-h-screen">
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/workspace" element={<Workspace />} />
-            <Route path="/empowerment" element={<Empowerment />} />
+            <Route path="/opc-management" element={<OpcManagement />} />
+            <Route path="/empowerment-platform" element={<EmpowermentPlatform />} />
+            <Route path="/order-management" element={<OrderManagement />} />
             <Route path="/credit" element={<Credit />} />
             <Route path="/panorama" element={<Panorama />} />
             <Route path="/social-insurance" element={<SocialInsurance />} />
